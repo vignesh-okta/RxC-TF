@@ -1,0 +1,3 @@
+variable "claim" {
+  type = string
+}

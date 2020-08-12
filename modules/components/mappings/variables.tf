@@ -1,0 +1,3 @@
+variable "mapping" {
+type = string
+}
