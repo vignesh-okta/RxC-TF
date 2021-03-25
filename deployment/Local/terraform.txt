@@ -1,0 +1,51 @@
+2021/02/09 09:11:15 [INFO] Terraform version: 0.14.5  
+2021/02/09 09:11:15 [INFO] Go runtime version: go1.15.6
+2021/02/09 09:11:15 [INFO] CLI args: []string{"C:\\Program Files (x86)\\tf.exe", "plan"}
+2021/02/09 09:11:15 [DEBUG] Attempting to open CLI config file: C:\Users\Vignesh\AppData\Roaming\terraform.rc
+2021/02/09 09:11:15 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2021/02/09 09:11:15 [DEBUG] ignoring non-existing provider search directory terraform.d/plugins
+2021/02/09 09:11:15 [DEBUG] ignoring non-existing provider search directory C:\Users\Vignesh\AppData\Roaming\terraform.d\plugins
+2021/02/09 09:11:15 [DEBUG] ignoring non-existing provider search directory C:\Users\Vignesh\AppData\Roaming\HashiCorp\Terraform\plugins
+2021/02/09 09:11:15 [INFO] CLI command args: []string{"plan"}
+2021/02/09 09:11:15 [WARN] Log levels other than TRACE are currently unreliable, and are supported only for backward compatibility.
+  Use TF_LOG=TRACE to see Terraform's internal logs.
+  ----
+2021/02/09 09:11:15 [DEBUG] New state was assigned lineage "bc609d63-c836-8e37-d202-be92531466e1"
+2021/02/09 09:11:15 [DEBUG] checking for provisioner in "."
+2021/02/09 09:11:15 [DEBUG] checking for provisioner in "C:\\Program Files (x86)"
+2021/02/09 09:11:15 [INFO] Failed to read plugin lock file .terraform\plugins\windows_amd64\lock.json: open .terraform\plugins\windows_amd64\lock.json: The system cannot find the path specified.
+2021/02/09 09:11:15 [INFO] backend/local: starting Plan operation
+2021-02-09T09:11:15.942-0800 [INFO]  plugin: configuring client automatic mTLS
+2021-02-09T09:11:16.023-0800 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe args=[.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe]
+2021-02-09T09:11:16.042-0800 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe pid=281420
+2021-02-09T09:11:16.042-0800 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe
+2021-02-09T09:11:16.164-0800 [INFO]  plugin.terraform-provider-okta_v3.7.4.exe: configuring server automatic mTLS: timestamp=2021-02-09T09:11:16.157-0800
+2021-02-09T09:11:16.227-0800 [DEBUG] plugin.terraform-provider-okta_v3.7.4.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2021-02-09T09:11:16.227-0800
+2021-02-09T09:11:16.227-0800 [DEBUG] plugin: using plugin: version=5
+2021-02-09T09:11:16.438-0800 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-09T09:11:16.460-0800 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe pid=281420
+2021-02-09T09:11:16.460-0800 [DEBUG] plugin: plugin exited
+2021/02/09 09:11:16 [INFO] terraform: building graph: GraphTypeValidate
+2021/02/09 09:11:16 [DEBUG] ProviderTransformer: "data.okta_user_type.example" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/oktadeveloper/okta"]
+2021/02/09 09:11:16 [DEBUG] ProviderTransformer: "data.okta_okta_profile_mapping_source.user" (*terraform.NodeValidatableResource) needs provider["registry.terraform.io/oktadeveloper/okta"]
+2021/02/09 09:11:16 [ERROR] AttachSchemaTransformer: No resource schema available for data.okta_okta_profile_mapping_source.user
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "var.api_token" references: []
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "var.test_okta_users" references: []
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "var.org_name" references: []
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "var.base_url" references: []
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "provider[\"registry.terraform.io/oktadeveloper/okta\"]" references: [var.api_token var.org_name var.base_url]
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "data.okta_user_type.example" references: []
+2021/02/09 09:11:16 [WARN] no schema is attached to data.okta_okta_profile_mapping_source.user, so config references cannot be detected
+2021/02/09 09:11:16 [DEBUG] ReferenceTransformer: "data.okta_okta_profile_mapping_source.user" references: []
+2021/02/09 09:11:16 [WARN] no schema is attached to data.okta_okta_profile_mapping_source.user, so config references cannot be detected
+2021/02/09 09:11:16 [DEBUG] Starting graph walk: walkValidate
+2021-02-09T09:11:16.465-0800 [INFO]  plugin: configuring client automatic mTLS
+2021-02-09T09:11:16.531-0800 [DEBUG] plugin: starting plugin: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe args=[.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe]
+2021-02-09T09:11:16.547-0800 [DEBUG] plugin: plugin started: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe pid=281316
+2021-02-09T09:11:16.547-0800 [DEBUG] plugin: waiting for RPC address: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe
+2021-02-09T09:11:16.675-0800 [INFO]  plugin.terraform-provider-okta_v3.7.4.exe: configuring server automatic mTLS: timestamp=2021-02-09T09:11:16.672-0800
+2021-02-09T09:11:16.746-0800 [DEBUG] plugin.terraform-provider-okta_v3.7.4.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2021-02-09T09:11:16.745-0800
+2021-02-09T09:11:16.746-0800 [DEBUG] plugin: using plugin: version=5
+2021-02-09T09:11:17.027-0800 [WARN]  plugin.stdio: received EOF, stopping recv loop: err="rpc error: code = Unavailable desc = transport is closing"
+2021-02-09T09:11:17.044-0800 [DEBUG] plugin: plugin process exited: path=.terraform/providers/registry.terraform.io/oktadeveloper/okta/3.7.4/windows_amd64/terraform-provider-okta_v3.7.4.exe pid=281316
+2021-02-09T09:11:17.044-0800 [DEBUG] plugin: plugin exited

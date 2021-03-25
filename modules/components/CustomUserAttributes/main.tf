@@ -1,3 +1,10 @@
+terraform {
+  required_providers {
+    okta = {
+      source = "oktadeveloper/okta"
+    }
+  }
+}
 resource "okta_user_schema" "CustomUserAttributes" {
   for_each    =  var.CustomUserAttributes
   index       = each.key
@@ -7,5 +14,5 @@ resource "okta_user_schema" "CustomUserAttributes" {
   required    = each.value.required
   permissions = each.value.permissions
   master      = "PROFILE_MASTER"
-  depends_on  = [okta_user_schema.CustomUserAttributes["portalId"]]
+  # depends_on  = [okta_user_schema.CustomUserAttributes["portalId"]]
 }
