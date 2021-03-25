@@ -27,3 +27,8 @@ module "AllOIDCapps" {
   oidc_apps = var.oidc_apps
   groups =  values(module.GetAppGroups.name)[*].id
   }
+
+ module "cors" {
+  source = "../../modules/components/CORS"
+  org_whitelist_url = var.org_whitelist_url
+} 

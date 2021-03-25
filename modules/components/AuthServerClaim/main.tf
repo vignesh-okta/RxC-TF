@@ -1,4 +1,11 @@
 
+terraform {
+  required_providers {
+    okta = {
+      source = "oktadeveloper/okta"
+    }
+  }
+}
 variable "vm_depends_on" {
   type    = any
   default = null

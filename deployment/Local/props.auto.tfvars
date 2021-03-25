@@ -16,3 +16,5 @@ oidc_apps = {
 }
 
 groups = ["Everyone"]
+
+org_whitelist_url = ["http://localhost:44367","https://cloudok.ga"]

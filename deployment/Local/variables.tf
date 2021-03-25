@@ -22,3 +22,7 @@ variable "oidc_apps" {
 variable "groups" {
   type = list(string)
 }
+variable "org_whitelist_url" {
+  type = list(string)
+}
+
